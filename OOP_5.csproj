@@ -56,9 +56,6 @@
     <Compile Include="HoverButton.cs">
       <SubType>Component</SubType>
     </Compile>
-    <Compile Include="megaButton.cs">
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -88,7 +85,12 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="logo.png" />
+    <Content Include="Frames\Frame 1.png" />
+    <Content Include="Frames\Frame 2.png" />
+    <Content Include="Frames\Frame 3.png" />
+    <Content Include="Frames\FrameF 1.png" />
+    <Content Include="Frames\FrameF 2.png" />
+    <Content Include="Frames\FrameF 3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

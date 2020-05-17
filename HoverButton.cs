@@ -13,8 +13,6 @@ namespace OOP_5
 {
     class HoverButton : Button
     {
-        protected Color color = Color.SkyBlue;
-
         public HoverButton() : base()
         {
             ForeColor = Color.White;

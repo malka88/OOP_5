@@ -1,10 +1,9 @@
 C:\Users\malka\source\repos\OOP_5\bin\Debug\OOP_5.exe.config
 C:\Users\malka\source\repos\OOP_5\bin\Debug\OOP_5.exe
 C:\Users\malka\source\repos\OOP_5\bin\Debug\OOP_5.pdb
-C:\Users\malka\source\repos\OOP_5\obj\Debug\OOP_5.csprojAssemblyReference.cache
 C:\Users\malka\source\repos\OOP_5\obj\Debug\OOP_5.Form1.resources
 C:\Users\malka\source\repos\OOP_5\obj\Debug\OOP_5.Properties.Resources.resources
 C:\Users\malka\source\repos\OOP_5\obj\Debug\OOP_5.csproj.GenerateResource.cache
-C:\Users\malka\source\repos\OOP_5\obj\Debug\OOP_5.csproj.CoreCompileInputs.cache
 C:\Users\malka\source\repos\OOP_5\obj\Debug\OOP_5.exe
 C:\Users\malka\source\repos\OOP_5\obj\Debug\OOP_5.pdb
+C:\Users\malka\Source\Repos\OOP_5\obj\Debug\OOP_5.csprojAssemblyReference.cache

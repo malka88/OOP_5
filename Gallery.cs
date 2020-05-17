@@ -15,42 +15,54 @@ namespace OOP_5
     {
         public string sign;
         public Image imgName;
+        public Image imgFrame;
     }
     class Gallery : HoverButton
     {
-        private Image logo;
         List<Img> images = new List<Img>();
+        public int index = 0;
 
         public Gallery() : base()
         {
-            logo = new Bitmap(Resources.logo);
-            images.Add(new Img() {sign = "First image!", imgName = new Bitmap(Resources.logo)} );
-            images.Add(new Img() { sign = "First image!", imgName = new Bitmap(Resources.logo) });
-            images.Add(new Img() { sign = "First image!", imgName = new Bitmap(Resources.logo) });
+            images.Add(new Img() { sign = "First image!", imgName = new Bitmap(Resources.Frame_1), imgFrame = new Bitmap(Resources.FrameF_1) } );
+            images.Add(new Img() { sign = "Second image!", imgName = new Bitmap(Resources.Frame_2), imgFrame = new Bitmap(Resources.FrameF_2) } );
+            images.Add(new Img() { sign = "Third image!", imgName = new Bitmap(Resources.Frame_3), imgFrame = new Bitmap(Resources.FrameF_3) } );
+
+            this.Image = images[index].imgName;
+            Text = "";
         }
 
         protected override void OnPaint(PaintEventArgs pe)
         {
             base.OnPaint(pe);
 
-            this.Image = logo;
-
             pe.Graphics.DrawString(Text, Font, new SolidBrush(ForeColor), ClientRectangle);
-
         }
 
         protected override void OnMouseEnter(EventArgs e)
         {
             base.OnMouseEnter(e);
-            color = Color.Blue;
-            Text = "KOKO";
+            this.Image = images[index].imgFrame;
+            Text = images[index].sign;
         }
 
         protected override void OnMouseLeave(EventArgs e)
         {
             base.OnMouseLeave(e);
-            color = Color.SkyBlue;
+            this.Image = images[index].imgName;
             Text = "";
+        }
+
+        protected override void OnMouseClick(MouseEventArgs e)
+        {
+            base.OnMouseClick(e);
+            if (index < 2)
+                index++;
+            else if (index == 2)
+                index = 0;
+
+            this.Image = images[index].imgFrame;
+            Text = images[index].sign;
         }
     }
 }

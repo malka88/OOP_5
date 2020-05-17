@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.gallery1 = new OOP_5.Gallery();
             this.SuspendLayout();
             // 
@@ -36,12 +35,10 @@
             // 
             this.gallery1.Font = new System.Drawing.Font("Microsoft YaHei UI", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gallery1.ForeColor = System.Drawing.Color.White;
-            this.gallery1.Image = ((System.Drawing.Image)(resources.GetObject("gallery1.Image")));
             this.gallery1.Location = new System.Drawing.Point(12, 12);
             this.gallery1.Name = "gallery1";
             this.gallery1.Size = new System.Drawing.Size(776, 426);
             this.gallery1.TabIndex = 0;
-            this.gallery1.Text = "gallery1";
             this.gallery1.UseVisualStyleBackColor = true;
             // 
             // Form1
