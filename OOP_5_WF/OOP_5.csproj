@@ -53,6 +53,9 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="Gallery.cs" />
+    <Compile Include="GalleryEllipse.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="HoverButton.cs">
       <SubType>Component</SubType>
     </Compile>
